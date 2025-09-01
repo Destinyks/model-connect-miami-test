@@ -1,0 +1,29 @@
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    &-gallery {
+        display: grid;
+        gap: 1rem;
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+    }
+
+    &-info {
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .region-list,
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 10px;
+    }
+}

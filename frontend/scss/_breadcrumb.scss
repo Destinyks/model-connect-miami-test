@@ -1,0 +1,25 @@
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+
+    ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    li {
+        &::after {
+            content: "→";
+            margin-left: 0.5rem;
+        }
+
+        &:last-child::after {
+            content: "";
+        }
+    }
+
+    a {
+        color: var(--color-brand-dark);
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile Admin</title>
+  </head>
+  <body>
+    <h1>Profile Admin</h1>
+
+    <form id="profileForm">
+      <input type="text" name="name" placeholder="Name" required />
+      <select name="role" required>
+        <option value="photographer">Photographer</option>
+        <option value="model">Model</option>
+        <option value="stylist">Stylist</option>
+      </select>
+      <input type="text" name="description" placeholder="Description" />
+      <input type="text" name="image" placeholder="Photo Link" />
+      <button type="submit">Add</button>
+    </form>
+
+    <h2>List profiles</h2>
+    <ul id="profiles"></ul>
+
+    <script>
+      const API_URL = "http://localhost:3000/api/profiles";
+
+      async function loadProfiles() {
+        const res = await fetch(API_URL);
+        const profiles = await res.json();
+        const list = document.getElementById("profiles");
+        list.innerHTML = "";
+        profiles.forEach((p) => {
+          const li = document.createElement("li");
+          li.textContent = `${p.name} (${p.role})`;
+          list.appendChild(li);
+        });
+      }
+
+      document
+        .getElementById("profileForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const data = Object.fromEntries(formData.entries());
+          await fetch(API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          e.target.reset();
+          loadProfiles();
+        });
+
+      loadProfiles();
+    </script>
+  </body>
+</html>

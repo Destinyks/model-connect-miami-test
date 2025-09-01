@@ -3,29 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ModelConnect Miami</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>ModelConnect Miami – Find Photographers, Models, and Stylists</title>
+    <meta
+      name="description"
+      content="Discover top photographers, models, and stylists in Miami. Connect with professionals in Miami Beach, Hallandale Beach, and more on ModelConnect Miami."
+    />
+    <meta
+      name="keywords"
+      content="ModelConnect Miami, photographers, models, stylists, Miami Beach, Hallandale Beach, fashion professionals"
+    />
+    <meta name="author" content="ModelConnect Miami" />
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="ModelConnect Miami – Fresh Profiles of Photographers, Models, and Stylists"
+    />
+    <meta
+      property="og:description"
+      content="Explore the best fashion professionals in Miami. Connect with photographers, models, and stylists in Miami Beach, Hallandale Beach, and beyond."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.modelconnectmiami.com/" />
+    <meta
+      property="og:image"
+      content="https://www.modelconnectmiami.com/img/og-image.jpg"
+    />
+    <meta property="og:site_name" content="ModelConnect Miami" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <h1>ModelConnect Miami – свежие профили</h1>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Regions</a>
+            <ul class="dropdown">
+              <li>
+                <a href="./region.html?region=Miami-Beach">Miami Beach</a>
+              </li>
+              <li>
+                <a href="./region.html?region=Hallandale-Beach"
+                  >Hallandale Beach</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categories</a>
+            <ul class="dropdown">
+              <li>
+                <a href="./category.html?category=Photographers"
+                  >Photographers</a
+                >
+              </li>
+              <li><a href="./category.html?category=Models">Models</a></li>
+              <li><a href="./category.html?category=Stylists">Stylists</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main container">
-      <h1>ModelConnect Miami - свежие профили</h1>
+      <h1 class="main-title">ModelConnect Miami – fresh profiles</h1>
       <section class="card-grid">
-        <article class="card">
-          <img
-            src="./img/Anna.jpg"
-            alt="Анна, фотограф из Майами"
-            loading="lazy"
-          />
-          <div class="card-body">
-            <h3>Анна</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Фотограф</p>
-            <p class="date">08.08.2025, 11:43</p>
-          </div>
-        </article>
+        <a href="./post.html">
+          <article class="card">
+            <img
+              src="./img/Anna.jpg"
+              alt="Анна, фотограф из Майами"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h3>Anna</h3>
+              <p><strong>City:</strong> Miami</p>
+              <p><strong>Category:</strong> Photographer</p>
+              <p class="date">08.08.2025, 11:43</p>
+            </div>
+          </article>
+        </a>
         <article class="card">
           <img
             src="./img/Vera.jpg"
@@ -33,9 +89,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Мария</h3>
-            <p><strong>Город:</strong> Халландейл-Бич</p>
-            <p><strong>Рубрика:</strong> Модель</p>
+            <h3>Maria</h3>
+            <p><strong>City:</strong> Hallandale Beach</p>
+            <p><strong>Category:</strong> Model</p>
             <p class="date">08.08.2025, 10:22</p>
           </div>
         </article>
@@ -46,9 +102,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Джон</h3>
-            <p><strong>Город:</strong> Майами-Бич</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>John</h3>
+            <p><strong>City:</strong> Miami Beach</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">07.08.2025, 18:05</p>
           </div>
         </article>
@@ -59,9 +115,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Алиса</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Фотограф</p>
+            <h3>Alice</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Photographer</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -72,9 +128,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -85,9 +141,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -98,9 +154,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -111,9 +167,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -124,9 +180,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -137,9 +193,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -150,9 +206,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -163,9 +219,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -176,9 +232,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -189,9 +245,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -202,9 +258,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -215,9 +271,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -228,9 +284,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -241,9 +297,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -254,9 +310,9 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
@@ -267,23 +323,23 @@
             loading="lazy"
           />
           <div class="card-body">
-            <h3>Юлия</h3>
-            <p><strong>Город:</strong> Майами</p>
-            <p><strong>Рубрика:</strong> Стилист</p>
+            <h3>Julia</h3>
+            <p><strong>City:</strong> Miami</p>
+            <p><strong>Category:</strong> Stylist</p>
             <p class="date">08.08.2025, 11:43</p>
           </div>
         </article>
       </section>
       <section class="regions">
-        <h2 class="title">Регионы</h2>
+        <h2 class="title">Regions</h2>
         <nav class="region-list">
           <a href="./region.html?region=Miami-Beach">Miami Beach</a>
           <a href="./region.html?region=Hallandale-Beach">Hallandale Beach</a>
         </nav>
       </section>
       <section class="categories">
-        <h2 class="title">Направления</h2>
-        <nav class="category-list">
+        <h2 class="title">Categories</h2>
+        <nav class="categories__list">
           <a href="./category.html?category=Photographers">Photographers</a>
           <a href="./category.html?category=Models">Models</a>
           <a href="./category.html?category=Stylists">Stylists</a>
